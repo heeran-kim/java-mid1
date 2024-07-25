@@ -12,26 +12,26 @@ public class NetworkClientV1 {
 
     public String connect() {
         if (connectError) {
-            System.out.println(address + "Connect Fail");
+            System.out.println(address + " Connect Fail");
             return "connectError";
         }
 
-        System.out.println(address + "Connect Success");
+        System.out.println(address + " Connect Success");
         return "success";
     }
 
     public String send(String data) {
         if (sendError) {
-            System.out.println(address + "Sending Fail: " + data);
+            System.out.println(address + " Sending Fail: " + data);
             return "sendError";
         }
 
-        System.out.println(address + "Sending Success: " + data);
+        System.out.println(address + " Sending Success: " + data);
         return "success";
     }
 
     public void disconnect() {
-        System.out.println(address + "disconnect");
+        System.out.println(address + " disconnect");
     }
 
     public void initError(String data) {
