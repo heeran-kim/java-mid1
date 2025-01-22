@@ -1,5 +1,6 @@
 package lang.immutable.address;
 
+// A case showing side effects
 public class RefMain1_3 {
 
     public static void main(String[] args) {
@@ -10,6 +11,7 @@ public class RefMain1_3 {
         System.out.println("a = " + a);
         System.out.println("b = " + b);
 
+        // it's difficult for individuals to know what all functions are written in detail
         change(b, "Busan");
         System.out.println("Busan -> b");
         System.out.println("a = " + a);
