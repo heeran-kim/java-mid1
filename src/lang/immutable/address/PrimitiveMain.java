@@ -8,15 +8,16 @@ package lang.immutable.address;
 public class PrimitiveMain {
 
     public static void main(String[] args) {
+        // primitive type never shares its value
         int a = 10;
-        int b = a; // copy the value of a and assign it to b
+        int b = a; // copy the value of a and assign it to b, not sharing
 
-        System.out.println("a = " + a);
-        System.out.println("b = " + b);
+        System.out.println("a = " + a); // 10
+        System.out.println("b = " + b); // 10
 
         b = 20;
         System.out.println("20 -> b");
-        System.out.println("a = " + a);
-        System.out.println("b = " + b);
+        System.out.println("a = " + a); // 10
+        System.out.println("b = " + b); // 20
     }
 }

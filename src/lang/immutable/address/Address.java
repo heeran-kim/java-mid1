@@ -1,9 +1,11 @@
 package lang.immutable.address;
 
+// Ref
 public class Address {
 
     private String value;
 
+    // constructor
     public Address(String value) {
         this.value = value;
     }
